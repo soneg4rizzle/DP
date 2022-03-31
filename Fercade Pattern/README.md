@@ -25,9 +25,39 @@
 | ignite() | ignite() | ignite() |
 | eject() | eject() | landing() |
 | launch() | | |
+```python
+class Stage1:
+    def ignite(self):
+        print('1st stage: ignition')
+
+    def launch(self):
+        print('1st stage: launching')
+
+    def eject(self):
+        print('1st stage: ejection')
+
+    def comeback(self):
+        print('1st stage: comback')
+
+
+class Stage2:
+    def ignite(self):
+        print('2nd stage: ignition')
+
+    def eject(self):
+        print('2nd stage: ejection')
+        
+class Capsule:
+    def ignite(self):
+        print('capsule: ignition')
+
+    def landing(self):
+        print('capsule: landing')        
+```
 > 이러한 경우에 퍼사드 패턴을 적용해 볼 수 있다.
 
 ```python
+# 퍼사드 패턴의 적용
 class Rocket:
   def __init__(self):
     self.stage1 = Stage1()
@@ -49,12 +79,6 @@ rocket.launch()   # Rocket 객체만 만들어서 launch 만 하면 되기에 �
 # 결론 : 퍼사드 패턴은 여러 개의 라이브러리, 클래스를 묶어서 간단한 인터페이스를 제공하는 역할
 
 ```
-* **결론** : 퍼사드 패턴은 여러 개의 라이브러리, 클래스를 묶어서 간단한 인터페이스를 제공하는 역할
-
-## 퍼사드 패턴의 응용
-> 딥러닝 프레임워크에 퍼사드 패턴의 적용
-
-```Fashion MNIST```
-* 70000개의 28x28 픽셀의 이미지와 10개의 클래스 정답으로 구성된 Data Set
-
-
+```**결론**```
+> 사용자 입장에서는 Rocket 클래스의 객체를 이용한다면 서브 클래스들의 메소드들을 호출 할 수 있으므로, 더 이상 서브 클래스를 신경쓰지 않아도 됩니다. 
+> 또한 퍼사드 패턴을 이용하면 서브클래스 내부에서 작동하는 기능들(메소드)의 사용법을 생각하지 않아도 퍼사드 객체가 제공하는 하나의 인터페이스만 사용하기 때문에, 클래스 간의 의존 관계를 줄일 수 있고, 코드의 복잡성 또한 낮추는 것이 가능해집니다.
