@@ -7,7 +7,8 @@
 
 * ```Facade``` : 건물의 앞면(정면)을 의미
 
-![image](https://user-images.githubusercontent.com/96826443/160956526-01e6666a-ff17-4297-a057-6e17a53ac489.png)
+<img src="https://user-images.githubusercontent.com/96826443/160956526-01e6666a-ff17-4297-a057-6e17a53ac489.png" width="500" height="500"/>
+                                                                                                                                         
 > Facade Pattern 은 내부의 복잡합은 숨기고 간단한 인터페이스를 제공하는 패턴입니다.
 * Client(고객)가 여러 라이브러리와 클래스들을 필요로 할 때, 이들을 조합해서 더 간단한 인터페이스로 제공해주는 클래스를 생각해 볼 수 있습니다.
   * 이를 적용시 고객은 복잡한 클래스/라이브러리에 접근할 필요가 없이 간단한 인터페이스를 제공해주는 Facade Pattern을 이용하여 쉽게 개발할 수 있게됩니다.
