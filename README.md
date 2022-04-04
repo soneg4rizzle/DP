@@ -25,7 +25,7 @@
   * 어댑터 패턴 (Adapter Pattern)
   * 프록시 패턴 (Proxy Pattern)
   * [퍼사드 패턴 (Facade Pattern)](https://github.com/soneg4rizzle/Design-Pattern/tree/main/Fercade%20Pattern)
-  * 데코레이터 패턴 (Decorator Pattern)
+  * [데코레이터 패턴 (Decorator Pattern)](https://github.com/soneg4rizzle/Design-Pattern/tree/main/Decorator%20Pattern)
   * 브릿지 패턴 (Bridge Pattern)
  
  ## 행동 디자인 패턴(Behavioral Design Pattern)
