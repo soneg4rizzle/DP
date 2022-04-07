@@ -6,8 +6,8 @@
 ## #브릿지 패턴의 구조
 ![image](https://user-images.githubusercontent.com/96826443/162209110-b722b2be-7892-4de5-a290-1c2c550d03f1.png)  
 > `Abstraction` : 기능 계층의 최상위 클래스, 구현 부분에 해당하는 클래스 인스턴스를 가지고 해당 인스턴스를 통해 구현부분의 메서드를 호출  
-> `Implementor` : Abstraction의 기능을 구현하기 위한 인터페이스
-> `RefindAbstraction` : 기능 계층에서 새로운 부분을 확장한 클래스
+> `Implementor` : Abstraction의 기능을 구현하기 위한 인터페이스  
+> `RefindAbstraction` : 기능 계층에서 새로운 부분을 확장한 클래스  
 > `ConcreteImplementor` : 실제 기능을 구현  
 
 ## #브릿지 패턴의 사용
