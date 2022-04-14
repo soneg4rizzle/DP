@@ -1,4 +1,4 @@
-# Compoiste Pattern
+# Composite Pattern
 > 컴퓨터의 파일 시스템에서는 디렉토리 안에 또 다른 하위 디렉토리가 존재하고, 그 안에는 또 다른 파일이나 디렉토리가 존재할 수 있다.
 > 이처럼 재귀적인 형태를 띄는 구조에서, 폴더와 파일을 같은 종류로 취급하는 것을 통해 트리구조로 간편하게 구성할 수 있다.
 * 하나의 객체와 객체가 들어있는 그룹을 같은 타입(동일 인터페이스를 갖는다)으로 취급
@@ -13,21 +13,21 @@
 ## 예제코드
 ```python
 class Animal:
-    def speak(self):
+    def speak(self): # composite function
         pass
 
 
-class Cat(Animal):
+class Cat(Animal): # leaf
     def speak(self):
         print('meow')
 
 
-class Dog(Animal):
+class Dog(Animal): # leaf
     def speak(self):
         print('bark')
 
 
-class AnimalGroup(Animal):
+class AnimalGroup(Animal): # composite
     def __init__(self):
         self.animals = []
 
