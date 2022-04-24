@@ -129,7 +129,7 @@ a = SideBorder(a, "/")
 a.show()
 ```
 
-```java
+```python
 a = StringDisplay("hello")
 a = FullBorder(a)
 # a = FullBoder(StringDisplay("hello"))
