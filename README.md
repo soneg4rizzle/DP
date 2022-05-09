@@ -30,6 +30,6 @@
   * [플라이웨이트 패턴 (Flyweight Pattern)](https://github.com/soneg4rizzle/Design-Pattern/tree/main/Flyweight%20Pattern)
   
  ## 행동 디자인 패턴(Behavioral Design Pattern)
-  * [전략 패턴(Strategy Pattern)](https://github.com/soneg4rizzle/Design-Pattern/blob/main/Strategy%20Pattern/README.md)
- 
+  * [전략 패턴(Strategy Pattern)](https://github.com/soneg4rizzle/Design-Pattern/blob/main/Strategy%20Pattern/README.md)  
+  * [템플릿 메소드 패턴(Template Method Pattern)](https://github.com/soneg4rizzle/Design-Pattern/tree/main/Template%20Method%20Pattern#readme)
  
