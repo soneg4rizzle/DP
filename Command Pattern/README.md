@@ -33,6 +33,7 @@ second_command = PrintCommand("second command")
 
 first_command.execute()
 second_command.execute()
+print("\n")
 
 
 class Dog:  # Receiver
@@ -80,4 +81,7 @@ invoker.addCommand(first_command)
 invoker.addCommand(dog_command)
 invoker.addCommand(second_command)
 invoker.runCommands()
+
 ```
+## 출력결과
+<img width="205" alt="image" src="https://user-images.githubusercontent.com/96826443/168042317-937da4b1-d15d-451e-a78b-6e3eefa33db8.png">
