@@ -83,3 +83,5 @@ baduk.accept(SpeakVisitor())
 kitty.accept(SpeakVisitor())
 ```
  
+## 출력 결과
+> ![image](https://user-images.githubusercontent.com/96826443/170626132-95bf708e-6d48-486e-925f-dbe49cdddba2.png)
