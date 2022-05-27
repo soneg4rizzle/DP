@@ -30,3 +30,56 @@ class Cat:
 * 이 때 내부 PROPERTY를 출력하고 싶다면 새로운 함수를 정의할 수도 있지만 Cat 클래스를 수정하지 않고 출력하고 싶다면 방문자(Visitor) 패턴을 활용해볼 수 있다.  
 
 ## 구체적인 방문자 패턴 코드 예시
+```python
+class AnimalVisitor:
+    def catVisit(self, element):
+        pass
+
+    def dogVisit(self, element):
+        pass
+
+
+class SpeakVisitor(AnimalVisitor):
+    def catVisit(self, element):
+        print("meow")
+
+    def dogVisit(self, element):
+        print("bark")
+
+
+class NameVisitor(AnimalVisitor):
+    def catVisit(self, element):
+        print(f"cat, {element.name}")
+
+    def dogVisit(self, element):
+        print(f"dog, {element.name}")
+
+
+class Animal:
+    def __init__(self, name: str):
+        self.name = name
+
+    def accept(self, visitor: AnimalVisitor):
+        pass
+
+
+class Cat(Animal):
+    def accept(self, visitor: AnimalVisitor):
+        visitor.catVisit(self)
+
+
+class Dog(Animal):
+    def accept(self, visitor: AnimalVisitor):
+        visitor.dogVisit(self)
+
+
+baduk = Dog('baduk')
+kitty = Cat('kitty')
+
+baduk.accept(NameVisitor())
+kitty.accept(NameVisitor())
+
+baduk.accept(SpeakVisitor())
+kitty.accept(SpeakVisitor())
+```
+ 
